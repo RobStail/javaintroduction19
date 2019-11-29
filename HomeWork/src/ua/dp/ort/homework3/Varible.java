@@ -3,30 +3,30 @@ package ua.dp.ort.homework3;
 public class Varible {
 	public static void main(String[] args) {
 	
-	byte dayweek = 7;// дней недели
-	byte love = 1; //любовь
-	byte wife = 1; //жена
-	short famely = 4;// семь€
-	short dayInYear = 365; //дней в году
-	short dayInMonth = 30; //дней мес€ца
-	int fanats = 5783992;// фанаты
-	int balls = 22123; //м€чи 
-	int people = 700200;//люди
-	long alfabets = 32; // алфавит
-	long breads =77783; //хлеб
-	long cats = 67882; //коты
-	float rating = 44.2f;// рейтинг
-	float salare = 33344.24f; //зарплата
-	float lengthOfCable = 883.2f; // длина кабел€
-	double lengthRoad = 124.4; //дина дороги
-	double distance = 4568.56; // дистанци€
-	double square = 582940.11;// площадь
+	byte dayWeek = 7;
+	byte love = 1;
+	byte wife = 1;
+	short famely = 4;
+	short dayInYear = 365; 
+	short dayInMonth = 30; 
+	int fanats = 5783992;
+	int balls = 22123;  
+	int people = 700200;
+	long alfabets = 32; 
+	long breads =77783; 
+	long cats = 67882; 
+	float rating = 44.2f;
+	float salare = 33344.24f; 
+	float lengthOfCable = 883.2f;
+	double lengthRoad = 124.4; 
+	double distance = 4568.56; 
+	double square = 582940.11;
 	char ot = '\u00A7';
 	char ii= '\u00B1';
 	char yy = '\u00A9';
 	
 	
-	System.out.println(dayweek);
+	System.out.println(dayWeek);
 	System.out.println(love);
 	System.out.println(wife);
 	System.out.println(famely);
@@ -45,7 +45,7 @@ public class Varible {
 	System.out.println(distance);
 	System.out.println(square);
 	System.out.println(ot);
-			System.out.println(ii);
-					System.out.println(yy);
+	System.out.println(ii);
+	System.out.println(yy);
 	}
 }
