@@ -61,6 +61,24 @@ public class Arithmetic {
     int balance = apple % children;
     System.out.println("Каждый ребенок получит по: " + Math.round(quantity) + " яблока!");
     System.out.println("И останется: " + balance + " яблока!");
+    
+   // 6) Есть ограниченная дистанция, за которую нельзя выходить. Дистанция равна 1 метр и 43 сантиметра.
+    //Лягушка находиться посредине этой дистанции и начинает прыгать.
+    //Каждый ее прыжок равен 2,5 сантиметра.
+    //С помощью арифметических операций вычислить и вывести в консоль сколько полных прыжков лягушка может сделать.
+    float distance = 1.43f;
+    float distanceCentr = 1.43f / 2f;
+    float jampFrog = 0.025f;
+    float resultJampFrog = distanceCentr / jampFrog; 
+    System.out.println("Лягушка может сделать " + Math.floor(resultJampFrog) + " полных прыжков." );
+    
+
+   // 7) дано 2 числа типа int
+    int a1 = 1999999999;
+    int b1 = 1999999999;
+    long res = (long) a1 + b1;
+   // Вывести корректную сумму этих чисел
+    System.out.println(res);
 	}
 
 }
