@@ -52,6 +52,7 @@ public class Arithmetic {
 		
 		double rectangle = x5 * y5;
 		System.out.println("Площадь прямоугольника: " + rectangle + " метров квадатных.");
+		System.out.println("Полная площадь прямоугольника: " + Math.floor(rectangle) + " метров квадатных.");
 		
 		
 	//	5) Есть 11 яблок, эти яблоки раздали 3м детям так чтобы всем досталось одинаковое количество целых яблок.
@@ -67,9 +68,9 @@ public class Arithmetic {
     //Каждый ее прыжок равен 2,5 сантиметра.
     //С помощью арифметических операций вычислить и вывести в консоль сколько полных прыжков лягушка может сделать.
     float distance = 1.43f;
-    float distanceCentr = 1.43f / 2f;
+    float distanceToJump = 1.43f / 2f;
     float jampFrog = 0.025f;
-    float resultJampFrog = distanceCentr / jampFrog; 
+    float resultJampFrog = distanceToJump / jampFrog; 
     System.out.println("Лягушка может сделать " + Math.floor(resultJampFrog) + " полных прыжков." );
     
 
