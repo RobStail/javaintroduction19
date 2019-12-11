@@ -12,10 +12,10 @@ public class SquareRectangle {
 		String a = scanner.nextLine();
 		String b = scanner.nextLine();
 
-		int length = Integer.parseInt(a);
-		int height = Integer.parseInt(b);
+		double length = Double.parseDouble(a);
+		double height = Double.parseDouble(b);
 
-		int square = length * height;
+		double square = length * height;
 
 		System.out.println("Площадь прямоугольника: " + square + " метров");
 
