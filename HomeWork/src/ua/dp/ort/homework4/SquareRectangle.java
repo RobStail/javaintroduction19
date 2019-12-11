@@ -16,10 +16,9 @@ public class SquareRectangle {
 		int height = Integer.parseInt(b);
 
 		int square = length * height;
-		
-	
-			System.out.println("Площадь прямоугольника: " + square + " метров");
-			
+
+		System.out.println("Площадь прямоугольника: " + square + " метров");
+
 	}
 
 }
