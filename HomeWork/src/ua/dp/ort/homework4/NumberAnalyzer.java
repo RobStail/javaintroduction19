@@ -16,7 +16,9 @@ public class NumberAnalyzer {
 //	   - число а меньше или равно б?
 
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("Input first number: ");
 		String namber1 = scanner.nextLine();
+		System.out.println("Input second number: ");
 		String namber2 = scanner.nextLine();
 
 		int a = Integer.parseInt(namber1);
