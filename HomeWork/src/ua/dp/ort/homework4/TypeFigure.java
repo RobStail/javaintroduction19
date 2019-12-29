@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class TypeFigure {
 
 	public static void main(String[] args) {
-//		3) Написать программу, которая позволяет определить тип фигуры, квадрат или прямоугольник.
-//	   Значение сторон фигуры должны вводиться с клавиатуры. Результат работы программы это вывод в консоль типа фигуры.
 
 		Scanner scanner = new Scanner(System.in);
 
@@ -21,7 +19,7 @@ String figure = "It`s a figure: ";
 		if (length == height) {
 			figure = figure + "square!";
 		}
-		if (length != height) {
+		else if (length != height) {
 			figure = figure + "rectangle!";
 		}
 		System.out.println(figure);
