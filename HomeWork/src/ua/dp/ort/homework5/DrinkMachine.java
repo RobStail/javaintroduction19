@@ -9,10 +9,10 @@ public class DrinkMachine {
 	public static final int PEPSI = 4;
 	public static final int EXIT = 0;
 
-	public static final int COFFEE_PRICE = 5;
-	public static final int SODA_PRICE = 3;
-	public static final int COCA_COLA_PRICE = 10;
-	public static final int PEPSI_PRICE = 10;
+	public static final int COFFEE_PRICE = 6;
+	public static final int SODA_PRICE = 4;
+	public static final int COCA_COLA_PRICE = 11;
+	public static final int PEPSI_PRICE = 11;
 
 	public static void main(String[] args) {
 
@@ -37,7 +37,7 @@ public class DrinkMachine {
 		userInput = scanner.nextLine();
 		double userMoney = Double.parseDouble(userInput);
 
-		if (userMoney >= 10) {
+		if (userMoney >= COCA_COLA_PRICE && userMoney >= PEPSI_PRICE) {
 			System.out.println("Input product: \n 1. Cofe \n 2.Soda \n 3. Coka-Cola \n 4. Pepsi \n 0. Exit");
 			userInput = scanner.nextLine();
 			costChoice = Integer.parseInt(userInput);
@@ -62,7 +62,7 @@ public class DrinkMachine {
 			if (costChoice == EXIT) {
 				System.out.println("Exit from program!");
 			}
-		} else if (userMoney >= 5 && userMoney < 10) {
+		} else if (userMoney >= COFFEE_PRICE && userMoney < COCA_COLA_PRICE && userMoney < PEPSI_PRICE) {
 			System.out.println("Input product: \n 1. Cofe \n 2.Soda \n 0. Exit");
 			userInput = scanner.nextLine();
 			costChoice = Integer.parseInt(userInput);
@@ -78,7 +78,7 @@ public class DrinkMachine {
 			if (costChoice == EXIT) {
 				System.out.println("Exit from program!");
 			}
-		} else if (userMoney >= 3 && userMoney < 5) {
+		} else if (userMoney >= SODA_PRICE && userMoney < COFFEE_PRICE) {
 			System.out.println("Input product: \n 2.Soda \n 0. Exit");
 			userInput = scanner.nextLine();
 			costChoice = Integer.parseInt(userInput);
@@ -92,7 +92,7 @@ public class DrinkMachine {
 			}
 		}
 
-		else if (userMoney < 3 && userMoney >= 1) {
+		else if (userMoney < SODA_PRICE && userMoney > EXIT) {
 			System.out.println("I`m sorry, you don’t have enough money");
 			System.out.println("Exit from program!");
 		}
