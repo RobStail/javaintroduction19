@@ -15,7 +15,7 @@ public class SquareRectangle {
 
 		double square = length * height;
 
-		System.out.println("Площадь прямоугольника: " + square + " метров");
+		System.out.println("Rectangle area: " + square + " meters");
 
 	}
 

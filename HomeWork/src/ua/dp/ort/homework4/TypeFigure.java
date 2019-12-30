@@ -19,7 +19,7 @@ String figure = "It`s a figure: ";
 		if (length == height) {
 			figure = figure + "square!";
 		}
-		else if (length != height) {
+		else {
 			figure = figure + "rectangle!";
 		}
 		System.out.println(figure);
