@@ -3,7 +3,11 @@ package ua.dp.ort.homework6;
 import java.util.Scanner;
 
 public class GasStation {
+
+	public static final int MINVOLUME = 1000;
+
 	public static void main(String[] args) {
+
 		Scanner scanner = new Scanner(System.in);
 		String dataInput;
 		double volumeTank = 0;
@@ -14,7 +18,7 @@ public class GasStation {
 			System.out.println("Input volume Tank :");
 			dataInput = scanner.nextLine();
 			double uncheckedvolumeTank = Double.parseDouble(dataInput);
-			if (uncheckedvolumeTank < 1000) {
+			if (uncheckedvolumeTank < MINVOLUME) {
 				System.out.println("Your input is not corect");
 				continue;
 			} else {
@@ -25,19 +29,17 @@ public class GasStation {
 
 		while (true) {
 			System.out.println("Input quantity uploads milliliters: ");
-
 			dataInput = scanner.nextLine();
 			double uncheckedmilliliters = Double.parseDouble(dataInput);
 			if (uncheckedmilliliters <= 0) {
 				System.out.println("Your input is not corect");
 				continue;
-			}
-
-			else {
+			} else {
 				milliliters = uncheckedmilliliters;
 				break;
 			}
 		}
+
 		while (true) {
 			System.out.println("Input desired volume amount of liters: ");
 			dataInput = scanner.nextLine();
@@ -46,13 +48,13 @@ public class GasStation {
 				System.out.println("Your input is not corect");
 				continue;
 			} else {
-				client = uncheckedclient * 1000;
+				client = uncheckedclient;
 				break;
 			}
 		}
 
 		System.out.println("Volume fuel left: " + (volumeTank - client) + " milliliters");
-		System.out.println("Diesel fill dose: " + client / milliliters + " portion(s).");
+		System.out.println("Diesel fill dose: " + client * 1000 / milliliters + " portion(s).");
 
 		scanner.close();
 
