@@ -29,7 +29,7 @@ public class GasStation {
 		}
 
 		while (true) {
-			System.out.println("Input quantity uploads liters: ");
+			System.out.println("Input quantity uploads milliliters: ");
 			dataInput = scanner.nextLine();
 			double uncheckedLiters = Double.parseDouble(dataInput);
 			if (uncheckedLiters <= 0) {
