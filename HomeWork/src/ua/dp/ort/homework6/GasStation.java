@@ -31,12 +31,12 @@ public class GasStation {
 		while (true) {
 			System.out.println("Input quantity uploads milliliters: ");
 			dataInput = scanner.nextLine();
-			double uncheckedLiters = Double.parseDouble(dataInput);
-			if (uncheckedLiters <= 0) {
+			double uncheckedMilliliters = Double.parseDouble(dataInput);
+			if (uncheckedMilliliters <= 0) {
 				System.out.println("Your input is not corect");
 				continue;
 			} else {
-				liters = uncheckedLiters / MLLITERS_PER_LITER;
+				liters = uncheckedMilliliters / MLLITERS_PER_LITER;
 				break;
 			}
 		}
