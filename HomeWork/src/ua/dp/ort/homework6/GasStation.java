@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class GasStation {
 
 	public static final int MINVOLUME = 1000;
+	public static final int MLLITERS_PER_LITER = 1000;
 
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
 		String dataInput;
 		double volumeTank = 0;
-		double milliliters = 0;
+		double liters = 0;
 		double client = 0;
 
 		while (true) {
@@ -28,14 +29,14 @@ public class GasStation {
 		}
 
 		while (true) {
-			System.out.println("Input quantity uploads milliliters: ");
+			System.out.println("Input quantity uploads liters: ");
 			dataInput = scanner.nextLine();
-			double uncheckedmilliliters = Double.parseDouble(dataInput);
-			if (uncheckedmilliliters <= 0) {
+			double uncheckedLiters = Double.parseDouble(dataInput);
+			if (uncheckedLiters <= 0) {
 				System.out.println("Your input is not corect");
 				continue;
 			} else {
-				milliliters = uncheckedmilliliters;
+				liters = uncheckedLiters / MLLITERS_PER_LITER;
 				break;
 			}
 		}
@@ -53,8 +54,8 @@ public class GasStation {
 			}
 		}
 
-		System.out.println("Volume fuel left: " + (volumeTank - client) + " milliliters");
-		System.out.println("Diesel fill dose: " + client * 1000 / milliliters + " portion(s).");
+		System.out.println("Volume fuel left: " + (volumeTank - client) + " liters");
+		System.out.println("Diesel fill dose: " + client / liters + " portion(s).");
 
 		scanner.close();
 
