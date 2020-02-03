@@ -38,7 +38,7 @@ public class ArraySort {
 			if (min < userNumbers[0]) {
 				min = userNumbers[0];
 			}
-			if(userNumbers[0] == min) {
+			if (userNumbers[0] == min) {
 				min2 = userNumbers[1];
 			}
 			System.out.print(userNumbers[sort] + " ");
@@ -48,8 +48,3 @@ public class ArraySort {
 		System.out.println("Second min number: " + min2);
 	}
 }
-
-//+3) Ќайти два наименьших (минимальных) элемента массива
-//4) ѕомен€ть местами минимальный и максимальный элементы
-//5) ѕереставить элементы заданного массива в обратном пор€дке, то есть произвести реверс массива.
-//6) –азложить положительные и отрицательные числа по разным массивам

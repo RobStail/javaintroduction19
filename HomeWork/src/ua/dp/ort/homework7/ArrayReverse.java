@@ -7,7 +7,7 @@ public class ArrayReverse {
 	public static void main(String[] args) throws IOException {
 
 		Scanner scanner = new Scanner(System.in);
-		int[] userNumbers = new int[5];
+		int[] userNumbers = new int[20];
 		for (int counter = 0; counter < userNumbers.length; counter++) {
 			System.out.print("Please input " + (counter + 1) + " number -> ");
 			String input = scanner.nextLine();
@@ -34,11 +34,10 @@ public class ArrayReverse {
 		}
 		for (int c = 0; c < userNumbers.length; c++) {
 			System.out.print(userNumbers[c] + " ");
-			
 
-		} 
+		}
 		System.out.println("");
-		
+
 		int i = 0;
 		int j = userNumbers.length - 1;
 		int tmp;

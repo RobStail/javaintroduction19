@@ -50,7 +50,7 @@ public class ArreySortMinMax {
 		}
 		userNumbers[minA] = max;
 		userNumbers[maxA] = min;
-		
+
 		for (int i = 0; i < userNumbers.length; i++) {
 			System.out.println("i = " + i + " userNumbers[" + i + "]=" + userNumbers[i]);
 		}
