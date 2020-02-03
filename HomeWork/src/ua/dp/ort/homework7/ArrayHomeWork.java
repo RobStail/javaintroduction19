@@ -22,7 +22,6 @@ public class ArrayHomeWork {
 
 		for (int counter = 0; counter < userInputNumbers.length; counter++) {
 			if (userInputNumbers[counter] % 2 == 0 && userInputNumbers[counter] >= 0) {
-//				System.out.print(userInputNumbers[counter] + " ");
 				sum += userInputNumbers[counter];
 				positiveNumber++;
 			}
@@ -30,16 +29,10 @@ public class ArrayHomeWork {
 		}
 		System.out.println("");
 		System.out.println("Sum positive even elements: " + sum);
-		System.out.println("Arithmetic mean of positive array elements: " + sum/positiveNumber);
-		
-		
-		
+		System.out.println("Arithmetic mean of positive array elements: " + sum / positiveNumber);
+
 	}
 
 }
 //+1) В массиве, содержащем положительные и отрицательные целые числа, вычислить сумму четных положительных элементов.
 //+2) Найти среднее арифметическое положительных элементов массива
-//3) Найти два наименьших (минимальных) элемента массива
-//4) Поменять местами минимальный и максимальный элементы
-//5) Переставить элементы заданного массива в обратном порядке, то есть произвести реверс массива.
-//6) Разложить положительные и отрицательные числа по разным массивам

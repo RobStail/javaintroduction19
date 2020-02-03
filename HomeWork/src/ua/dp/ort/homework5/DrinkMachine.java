@@ -11,7 +11,7 @@ public class DrinkMachine {
 
 	public static final int COFFEE_PRICE = 6;
 	public static final int SODA_PRICE = 4;
-	public static final int COCA_COLA_PRICE = 11;
+	public static final int COCA_COLA_PRICE = 8;
 	public static final int PEPSI_PRICE = 11;
 
 	public static void main(String[] args) {
