@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class ExaminationTask {
 
 	public static void main(String[] args) {
-
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Input symbol please > ");
@@ -18,15 +17,12 @@ public class ExaminationTask {
 		int widthFigure = UserInput.input(scanner);
 
 		char[][] figurArr = new char[lengthFigure][widthFigure];
-
 		for (int i = 0; i < figurArr.length; i++) {
 			for (int j = 0; j < figurArr[i].length; j++) {
 				figurArr[i][j] = figureSymbol;
-
 				System.out.print(" " + figurArr[i][j]);
 			}
 			System.out.println();
 		}
 	}
-
 }

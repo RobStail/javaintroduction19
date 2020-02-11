@@ -12,7 +12,6 @@ public class UserInput {
 
 	public static char inputSymboleName(Scanner scanner) {
 		String inputUser = scanner.nextLine();
-
 		return inputUser.charAt(0);
 	}
 }
